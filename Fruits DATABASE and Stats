@@ -1,0 +1,22 @@
+CREATE TABLE fruit (id INTEGER PRIMARY KEY, item_type TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO fruit VALUES (1, "apple", 10, 4.00);
+INSERT INTO fruit VALUES (2, "mango", 9, 4.00);
+INSERT INTO fruit  VALUES (3, "grapes", 19, 4.00);
+INSERT INTO fruit VALUES (4, "passion fruit", 6, 10.00);
+INSERT INTO fruit VALUES (5, "peaches", 4, 8.00);
+INSERT INTO fruit VALUES (6, "cherrys", 7, 3.00);
+INSERT INTO fruit VALUES (7, "tomatoes", 7, 5.00);
+INSERT INTO fruit VALUES (8, "pineapples", 8, 2.00);
+INSERT INTO fruit VALUES (9, "papaya", 8, 72.00);
+INSERT INTO fruit VALUES (10, "watermelon", 20, 12.00);
+INSERT INTO fruit VALUES (11, "cucumber", 10, 1.50);
+INSERT INTO fruit VALUES (12, "banana", 1, 1.00);
+INSERT INTO fruit VALUES (13, "strawberry", 6, 9.00);
+INSERT INTO fruit VALUES (14, "dragon fruit", 8, 5.00);
+INSERT INTO fruit VALUES (15, "raspberry", 9, 4.00);
+
+SELECT * FROM fruit 
+ORDER BY price;
+
+SELECT SUM(quantity) FROM fruit;
